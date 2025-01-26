@@ -81,8 +81,8 @@ local Window = SN_Lib:CreateWindow({
     Title = "Money Giver Panel",
 })
 
--- Create Webhook URL input field
-Window:CreateTextBox({
+-- Create the Webhook URL TextBox
+local webhookTextBox = Window:CreateTextBox({
     Name = "Webhook URL",
     PlaceholderText = "Enter Webhook URL",
     Callback = function(text)
@@ -95,7 +95,7 @@ Window:CreateTextBox({
     end,
 })
 
--- Create Test Message Button
+-- Create the Test Message Button
 Window:CreateButton({
     Name = "Test Message",
     Callback = function()
@@ -103,8 +103,8 @@ Window:CreateButton({
     end,
 })
 
--- Create Recipient Username input field
-Window:CreateTextBox({
+-- Create the Recipient Username TextBox
+local recipientTextBox = Window:CreateTextBox({
     Name = "Recipient Username",
     PlaceholderText = "Enter Recipient Username",
     Callback = function(text)
@@ -112,8 +112,8 @@ Window:CreateTextBox({
     end,
 })
 
--- Create Amount input field
-Window:CreateTextBox({
+-- Create the Amount TextBox
+local amountTextBox = Window:CreateTextBox({
     Name = "Amount",
     PlaceholderText = "Enter Amount to Give",
     Callback = function(text)
@@ -121,7 +121,7 @@ Window:CreateTextBox({
     end,
 })
 
--- Create Give Money Button
+-- Create the Give Money Button
 Window:CreateButton({
     Name = "Give Money",
     Callback = function()
