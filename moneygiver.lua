@@ -76,12 +76,12 @@ end
 -- Create the GUI using SN-Lib
 local Window = SN_Lib:CreateWindow({
     Name = "Money Giver Admin Panel",
-    Size = UDim2.new(0, 500, 0, 350), -- Adjusting height to accommodate the new button
-    Pos = UDim2.new(0.5, -250, 0.5, -175), -- Adjusting position
+    Size = UDim2.new(0, 500, 0, 400), -- Adjusted height to fit all components
+    Pos = UDim2.new(0.5, -250, 0.5, -200), -- Centered window
     Title = "Money Giver Panel",
 })
 
--- Create Input for Webhook URL
+-- Create Webhook URL input field
 Window:CreateTextBox({
     Name = "Webhook URL",
     PlaceholderText = "Enter Webhook URL",
@@ -103,7 +103,7 @@ Window:CreateButton({
     end,
 })
 
--- Create Input for Recipient Username
+-- Create Recipient Username input field
 Window:CreateTextBox({
     Name = "Recipient Username",
     PlaceholderText = "Enter Recipient Username",
@@ -112,7 +112,7 @@ Window:CreateTextBox({
     end,
 })
 
--- Create Input for Amount to Give
+-- Create Amount input field
 Window:CreateTextBox({
     Name = "Amount",
     PlaceholderText = "Enter Amount to Give",
